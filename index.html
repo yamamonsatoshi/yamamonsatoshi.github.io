@@ -4,15 +4,180 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap Sample</title>
+    <meta name="keywords" content="Yamamon,遊び場,猫">
+    <meta name="description" content="Yamamonの遊び場です">
+    <title>Yamamonの遊び場</title>
     <!-- BootstrapのCSS読み込み -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <!-- 独自CSSの読み込み -->
+    <link rel="stylesheet" href="original.css">
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+    
+      body {
+        font-size: 16px;
+        background: #FFF;
+      }
+      
+      .row.main-img{
+        text-align: center;
+      }
+      
+      img.top{
+        width: 100%;
+      }
+      
+      ul li{
+        display: inline;
+        margin: 30px 20px 10px 0px;
+      }
+      
+      .container{
+        margin: 20px;
+      }
+      
+      .navbar {
+        border-radius: 0; 
+      }
+      
+      .row {
+        margin-left: 50px;
+        margin-bottom: 50px;
+      }
+      
+      .icon {
+        text-align: center;
+      }
+      
+      .icon .glyphicon {
+        margin-bottom: 10px;
+        font-size: 40px;
+        color: #777;
+      }
+      
+      .content h2 {
+        margin-top: 0;
+        padding-bottom: 15px;
+      }
+      .content p {
+        margin-bottom: 30px;
+      }
+      
+      footer {
+        border-top: 1px solid#e7e7e7;
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      
+      .copyright {
+        padding: 20px 0;
+        font-size: 12px;
+        color: #666;
+      }
+      
+      @media (max-width: 768px) {
+        body {
+          font-size: 12px;
+        }
+        h1 {
+          font-size: 30px;
+        }
+        h2 {
+          font-size: 24px;
+        }
+        .panel-title {
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, world!</h1>
+    <!-- Headerなど -->
+    <header>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="collapse navbar-collapse" id="site-menu">
+            <ul class="nav navbar-nav nav-bar-center">
+              <a href="#dare"><li>Yamamonとは誰なのか</li></a>
+              <a href="#nani"><li>Yamamonは何をするのか</li></a>
+              <a href="#doko"><li>Yamamonはどこに行くのか</li></a>
+              <a href="https://github.com/yamamonsatoshi/yamamonsatoshi.github.io"><li>Github pageへ</li></a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <!-- main-img -->
+      <div class="row main-img">
+        <img class="top" src="cover.jpg">
+      </div>
+      <!-- end main-img-->
+
+      <!-- main-contents -->
+      <div class="row main-contents">
+        <div class="row dare">
+          <!-- dare -->
+          <h1 id="dare">Yamamonは誰なのか</h1>
+          <hr>
+          <div class="col-sm-12">
+            <p>→名乗るほどのものではありません。今でこそ立派に大学院生をしていますが、元々はしがない幼稚園生にすぎませんでした。<br />
+            作成したい面白いものはたくさんあり、そのアイデアを形にする手法に日々悩み苦しんでおります。</p>
+          </div>
+          <!-- end dare -->
+        </div>
+
+        <!-- naniwo -->
+        <div class="row naniwo">
+          <h1 id="nani">Yamamonは何をするのか</h1>
+          <hr>
+          <p>→価値のあるものをたくさん生み出す夢をよく見ます</p>
+          <div class="col-sm-3">
+            <img src="top_menu13.jpg" alt="" width="200px">
+            <div img-exp>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati molestiae dicta adipisci magnam quas, fugit est minima incidunt neque sunt.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <img src="top_menu17.jpg" alt="" width="200px">
+            <div img-exp>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia, eveniet dolores quae hic, natus deleniti. Similique autem, necessitatibus accusantium incidunt.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <img src="top_menu18.jpg" alt="" width="200px">
+            <div img-exp>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet maiores repudiandae, repellendus modi provident illo ut vitae voluptatem et nemo.</p>
+            </div>
+          </div>
+          <div class="col-sm-3">
+            <img src="top_menu20.jpg" alt="" width="200px">
+            <div img-exp>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet tenetur impedit ex laudantium, dolore velit sunt ad saepe, dolor natus!</p>
+            </div>
+          </div>
+          <!-- end naniwo -->
+        </div>
+
+        <!-- dokoni -->
+        <div class="row doko">
+          <h1 id="doko">Yamamonはどこに行くのか</h1>
+          <hr>
+          <div class="col-sm-12">
+            <p>→前へ。たとえそれがこれまで歩んできた方向であっても。</p>
+          </div>
+        </div>
+        <!-- end dokoni -->
+      </div>
+      <!-- end main-contents -->
+    </div>
+    <footer>Copyright YAMAMON 2015</footer>
   </body>
 </html>
